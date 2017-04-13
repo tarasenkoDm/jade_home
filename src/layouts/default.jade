@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Jade template
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    script(src="https://use.fontawesome.com/c8751efcd6.js")
+    link(rel="stylesheet", href="/assets/css/app.css")
+
+  body
+    block header
+      header
+      include ../pages/part
+        h1 layout header
+    block content
+    block footer
+
+    include ../pages/home-page/blocks/top-section
+
+    script(src="/assets/js/app.js")
+

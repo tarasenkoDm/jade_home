@@ -1,0 +1,31 @@
+
+.top-block-wrapper {
+  padding: 20px 0;
+  background: black;
+  .top-right {
+    background: yellow;
+  }
+  .top-left {
+    background: green;
+    a {
+      transition: background 0.5s ease, transform 1s ease;
+      width: 100%;
+      display: inline-block;
+      &:hover {
+        color: white;
+        background: red;
+        transform: rotate(360deg);
+      }
+    }
+  }
+}
+
+.block-wrapper {
+  padding: 20px 0;
+  .list {
+    border: 1px solid black;
+  }
+  .blabla {
+    border: 1px solid black;
+  }
+}

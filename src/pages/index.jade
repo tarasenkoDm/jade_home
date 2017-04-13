@@ -1,0 +1,38 @@
+extends ../layouts/default.jade
+
+block header
+	H2 jade header
+
+block content
+	h1 jade page
+
+	div
+		input(type="text" placeholder="my input")
+
+	div
+		lable
+			| text text text
+			input(type="text" placeholder="my second input")
+
+		ul
+			li: a(href="#" style="color: white; background: black") title 1
+			li
+				a(href="#") title 2
+			li
+				a(href="#") title 3
+			li
+				| li text
+				a(href="#")  title 3
+
+		include part
+
+		div
+			input(type="text" placeholder="inline attribute")
+
+		div
+			input(
+				type="text"
+				placeholder="inline attribute"
+				)
+
+		include part
