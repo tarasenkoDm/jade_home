@@ -1,0 +1,31 @@
+extends ../../layouts/default
+
+block header
+block content
+
+  include ../../data/variables
+  include ../../data/mixins
+
+  - var numberArray = ["first", "second", "third", "fourth", "fifth"]
+
+  .wrapper
+    ul
+      each number, index in numberArray
+        li #{number}, index - #{index}
+
+
+  .wrapper
+    ul
+      each number, index in numberArray
+        if number != "fifth"
+          li #{number}, index - #{index}
+
+
+
+  .row.wrapper.align-center
+    each obj in objArray
+      div(class="column small-4 #{obj.className}")
+        h3 #{obj.title}
+        p #{obj.message}
+        + tegP
+

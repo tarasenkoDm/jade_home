@@ -1,0 +1,15 @@
+extends ../../layouts/default
+
+block header
+block content
+
+  include ../../data/mixins
+  include ../../data/variables
+
+  .row.align-center
+    each block in blocks
+      .column.small-4
+        + imgPath(imgPath, block.imgHouse)
+        h3 #{block.title}
+        p #{block.address}
+        p #{block.description}
